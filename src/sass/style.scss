@@ -1,0 +1,32 @@
+// Colors
+$white: #ffffff;
+$black: #000000;
+
+// Fonts
+$font: 'Open Sans', sans-serif;
+@mixin regular {
+	font-family: $font;
+}
+@mixin heading {
+	font-family: $font;
+	font-weight: 800;
+}
+
+body {
+	background: $white;
+	color: $black;
+	@include regular;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	@include heading;
+
+	a {
+		text-decoration: none;
+		
+		&:hover {
+			text-decoration: underline;
+		}
+
+	}
+}

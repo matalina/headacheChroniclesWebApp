@@ -1,0 +1,37 @@
+// grid variables
+$width: 14%;
+$numCols: 6;
+$gutter: 1%; // right left margins
+$spacer: 1%; // top bottom margins
+
+
+// grid
+@mixin column {
+	float: left;
+	margin: $spacer $gutter;
+}
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	width: $width * $numCols + $gutter * $numCols * 2;
+	margin: 0 100% - ($width * $numCols + $gutter * $numCols * 2);
+}
+
+@for $i from 1 through $numCols {
+  .col-#{$i} { 
+  	width: $width * $i + ($gutter * 2 * $i) - ($gutter * 2); 
+  	@include column;
+
+  	@media (max-width:799px) {
+		width: 100%;
+	}
+  }
+}
+
+.clear {
+	clear: both;
+}
+

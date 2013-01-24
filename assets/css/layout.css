@@ -1,0 +1,23 @@
+html { width: 100%; height: 100%; }
+
+body { width: 96%; margin: 0 4%; }
+
+.col-1 { width: 14%; float: left; margin: 1% 1%; }
+@media (max-width: 799px) { .col-1 { width: 100%; } }
+
+.col-2 { width: 30%; float: left; margin: 1% 1%; }
+@media (max-width: 799px) { .col-2 { width: 100%; } }
+
+.col-3 { width: 46%; float: left; margin: 1% 1%; }
+@media (max-width: 799px) { .col-3 { width: 100%; } }
+
+.col-4 { width: 62%; float: left; margin: 1% 1%; }
+@media (max-width: 799px) { .col-4 { width: 100%; } }
+
+.col-5 { width: 78%; float: left; margin: 1% 1%; }
+@media (max-width: 799px) { .col-5 { width: 100%; } }
+
+.col-6 { width: 94%; float: left; margin: 1% 1%; }
+@media (max-width: 799px) { .col-6 { width: 100%; } }
+
+.clear { clear: both; }
