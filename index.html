@@ -15,12 +15,65 @@
 	</header>
 
 	<div id="middle">
-		
+		<div id="newHeadache" class="col-2">
+			<p><a href="#newHeadacheForm">New Headache</a></p>
+			<form action="newHeadache" method="post" id="newHeadacheForm">
+				<fieldset>
+					<legend>New Headache</legend>
+					
+					<label for="newDate">When did it start?</label>
+					<input type="date" id="newDate" required placeholder="YYYY-MM-DD" />
+					<input type="time" id="newTime" required placeholder="HH:MM:SS" />
+
+					<label for="newIntensity">How Bad is it?</label>
+					<input type="number" id="newIntensity" min="1" max="10" required placeholder="1-10" />
+
+					<label for="newLocation">Where is it?</label>
+					<input type="text" name="newLocation" id="newLocation" required />
+
+					<label for="newPainType">What type of pain is it?</label>
+					<input type="text" id="newPainType" required />
+
+					<label for="newSymptoms">What were the symptoms?</label>
+					<textarea id="newSymptoms"></textarea>
+
+					<label for="newFoodBefore">What have you eaten today?</label>
+					<textarea id="newFoodBefore"></textarea>
+
+					<label for="newSleep">How was your sleep last night?</label>
+					<textarea id="newSleep"></textarea>
+
+					<label for="newActivities">What were you doing before it started?</label>
+					<textarea id="newActivities"></textarea>
+
+					<label for="newDailyLife">How has your daily life been affected?</label>
+					<textarea id="newDailyLife"></textarea>
+
+					<label for="newOtherMedications">What other medications have you taken today? (other than for your headache)</label>
+					<textarea id="newOtherMedications"></textarea>
+
+					<label for="newTreatment">What have you done to treat it?</label>
+					<textarea id="newTreatment"></textarea>
+
+					<label for="newRelief">Describe the relief the treatments had.</label>
+					<textarea id="newRelief"></textarea>
+
+					<label for="newOther">Anything else??</label>
+					<textarea id="newOther"></textarea>
+
+					<input type="submit" value="New Headache" name="create" />
+
+				</fieldset>
+			</form>
+		</div>
 	</div>
 
 	<footer class="col-6">
 		Developed by <a href="http://alicia.wilkersons.us">Alicia Wilkerson</a>
 	</footer>
-	<script src="assets/js/all.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/headache.js"></script>
+	<script src="assets/js/validate.js"></script>
+	<script src="assets/js/newHeadache.js"></script>
 </body>
 </html>

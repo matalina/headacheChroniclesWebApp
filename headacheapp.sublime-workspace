@@ -75,7 +75,15 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 555,
+				"buffer_size": 608,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "readme.md",
+			"settings":
+			{
+				"buffer_size": 487,
 				"line_ending": "Windows"
 			}
 		},
@@ -91,7 +99,7 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 311.0,
+		"height": 392.0,
 		"selected_items":
 		[
 			[
@@ -215,7 +223,7 @@
 				"CI Codeintel Helper: Create IDE helper"
 			]
 		],
-		"width": 400.0
+		"width": 512.0
 	},
 	"console":
 	{
@@ -400,6 +408,7 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -407,15 +416,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 555,
+						"buffer_size": 608,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								266,
-								276
+								608,
+								608
 							]
 						],
 						"settings":
@@ -434,6 +443,35 @@
 				},
 				{
 					"buffer": 1,
+					"file": "readme.md",
+					"settings":
+					{
+						"buffer_size": 487,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								487,
+								487
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "src/js/headache.js",
 					"settings":
 					{

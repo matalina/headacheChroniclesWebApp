@@ -1,6 +1,7 @@
 // Colors
 $white: #ffffff;
 $black: #000000;
+$red: #880000;
 
 // Fonts
 $font: 'Open Sans', sans-serif;
@@ -11,7 +12,7 @@ $font: 'Open Sans', sans-serif;
 	font-family: $font;
 	font-weight: 800;
 }
-
+// Elements
 body {
 	background: $white;
 	color: $black;
@@ -29,4 +30,17 @@ h1, h2, h3, h4, h5, h6 {
 		}
 
 	}
+}
+
+// Errors
+@mixin errorColors {
+	background: $red;
+	color: $white;
+}
+
+.formError {
+	@include errorColors;
+	-webkit-border-radius: 10px;
+    border-radius: 10px;
+    padding: 10px;
 }

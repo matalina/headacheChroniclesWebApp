@@ -3,3 +3,5 @@ body { background: white; color: black; font-family: "Open Sans", sans-serif; }
 h1, h2, h3, h4, h5, h6 { font-family: "Open Sans", sans-serif; font-weight: 800; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { text-decoration: none; }
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { text-decoration: underline; }
+
+.formError { background: #880000; color: white; -webkit-border-radius: 10px; border-radius: 10px; padding: 10px; }
